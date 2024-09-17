@@ -8,7 +8,12 @@
     <title>Bikcraft - Bicicletas Elétricas</title>
     <meta name="description" content="Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcraft.">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -19,7 +24,7 @@
             </a>
 
             <nav aria-label="primaria">
-                <ul class="header-menu">
+                <ul class="header-menu cor-0">
                     <li><a href="./bicicletas.html">Bicicletas</a></li>
                     <li><a href="./seguros.html">Seguros</a></li>
                     <li><a href="./contato.html">Contato</a></li>
@@ -27,6 +32,21 @@
             </nav>
         </div>
     </header>
+
+    <main class="introducao-bg">
+        <div class="introducao">
+            <div class="introducao-conteudo">
+                <h1 class="texto-grande cor-0">Bicicletas feitas sob medida<span class="cor-p1">.</span></h1>
+                <p class="texto-medio cor-5">Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para você. Explore o mundo na sua velocidade com a Bikcraft.</p>
+                <a class="botao" href="./bicicletas.html">Escolha a sua</a>
+            </div>
+            <div><img src="./img/fotos/introducao.jpg" alt="Bicicleta elétrica preta">
+            </div> <!-- Sempre envolva imagem em uma div. Motivo: Imagens soltas no grid funcionam diferentemente em browsers distintos -->
+        </div>
+    </main>
+
+    <h2 class="texto-grande">escolha a sua<span class="cor-p1">.</span></h2>
+
 </body>
 
 </html>

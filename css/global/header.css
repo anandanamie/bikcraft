@@ -1,20 +1,5 @@
-body {
-  margin: 0px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-ul {
-  margin: 0px;
-  padding: 0px;
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
 .header-bg {
-  background-color: #000000;
+  background-color: var(--cor-12);
 }
 
 .header {
@@ -24,7 +9,7 @@ a {
   justify-content: space-between; /* Centralizados */
   align-items: center;
   padding: 20px;
-  max-width: 1160px; /* Ou podemos colocar box-sizing: border-box e max-width: 1200; para não precisarmos colocar número quebrado aqui por conta do padding de 20px */
+  max-width: 1200px; /* Ou podemos colocar box-sizing: border-box e max-width: 1200; para não precisarmos colocar número quebrado aqui por conta do padding de 20px */
   margin-left: auto; /* Sempre centralizar na responsividade */
   margin-right: auto;
 }
@@ -36,11 +21,12 @@ a {
 }
 
 .header-menu a {
-  color: #ffffff;
   display: inline-block; /* Padding não vai ficar direitinho se os links ficarem um abaixo do outro, portanto deve ser inline block */
   padding: 16px 0px; /* Aumentar a área de contato */
   font-size: 18px;
   position: relative;
+  font-family: "Poppins";
+  font-weight: 400;
 }
 
 .header-menu a:after {
@@ -48,7 +34,7 @@ a {
   display: block;
   height: 2px;
   width: 0%;
-  background: #ffffff;
+  background: var(--cor-0);
   margin-top: 4px;
   transition: 0.3s;
   position: absolute;
@@ -64,13 +50,13 @@ a {
   }
 
   .header-menu a {
-    background: #111111;
+    background: var(--cor-11);
     padding: 12px 16px;
     border-radius: 4px;
   }
 
   .header-menu a:hover {
-    background-color: #2e2e2e;
+    background-color: var(--cor-10);
   }
 
   .header a:after {
