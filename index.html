@@ -13,14 +13,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
     <header class="header-bg">
-        <div class="header conteiner">
+        <div class="header container">
             <a href="./">
-                <img src="/bikcraft.svg" alt="Bikcraft">
+                <img src="./bikcraft.svg" alt="Bikcraft">
             </a>
 
             <nav aria-label="primaria">
@@ -34,19 +33,21 @@
     </header>
 
     <main class="introducao-bg">
-        <div class="introducao conteiner">
+        <div class="introducao container">
             <div class="introducao-conteudo">
                 <h1 class="font-1-xxl cor-0">Bicicletas feitas sob medida<span class="cor-p1">.</span></h1>
                 <p class="font-2-l cor-5">Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para você. Explore o mundo na sua velocidade com a Bikcraft.</p>
                 <a class="botao" href="./bicicletas.html">Escolha a sua</a>
             </div>
-            <div><img src="./img/fotos/introducao.jpg" alt="Bicicleta elétrica preta">
+            <div>
+                <img src="./img/fotos/introducao.jpg" alt="Bicicleta elétrica preta.">
             </div> <!-- Sempre envolva imagem em uma div. Motivo: Imagens soltas no grid funcionam diferentemente em browsers distintos -->
         </div>
     </main>
 
     <article class="bicicletas-lista">
         <h2 class="container font-1-xxl">escolha a sua<span class="cor-p1">.</span></h2>
+
         <ul>
             <li>
                 <a href="./bicicletas/magic.html">
@@ -73,32 +74,30 @@
     </article>
 
     <article class="tecnologia-bg">
-        <div class="tecnologia conteiner">
+        <div class="tecnologia container">
             <div class="tecnologia-conteudo">
                 <span class="font-2-l-b cor-5">Tecnologia Avançada</span>
                 <h2 class="font-1-xxl cor-0">você escolhe as suas cores e componentes<span class="cor-p1">.</span></h2>
-                <p class="font-2-l cor-5">Cada Bikcraft é única e possui a sua identidade. As medidas serão exatas para o seu corpo e altura, garantindo maior conforto e e ergonomia na sua pedalada. Você pode também personalizar completamente as suas cores.</p>
+                <p class="font-2-l cor-5">Cada Bikcraft é única e possui a sua identidade. As medidas serão exatas para o seu corpo e altura, garantindo maior conforto e ergonomia na sua pedalada. Você pode também personalizar completamente as suas cores.</p>
                 <a class="link" href="./bicicletas.html">Escolha um modelo</a>
                 <div class="tecnologia-vantagens">
                     <div>
-                        <img src="./img/ícones/eletrica.svg" alt="">
+                        <img src="./img/icones/eletrica.svg" alt="">
                         <h3 class="font-1-m cor-0">Motor Elétrico</h3>
                         <p class="font-2-s cor-5">Toda Bikcraft é equipada com um motor elétrico que possui duração de até 120h. A bateria é recarregada com a sua energia gasta ao pedalar.</p>
                     </div>
                     <div>
-                        <img src="./img/ícones/rastreador.svg" alt="">
+                        <img src="./img/icones/rastreador.svg" alt="">
                         <h3 class="font-1-m cor-0">Rastreador</h3>
                         <p class="font-2-s cor-5">Sabemos o quão preciosa é a sua Bikcraft, por isso adicionamos rastreadores e sistemas anti-furto para garantir o seu sossego.</p>
                     </div>
                 </div>
             </div>
-
             <div class="tecnologia-imagem"> <!-- Imagem diretamente no grid não fica tão bem, temos que colocar numa div-->
                 <img src="./img/fotos/tecnologia.jpg" alt="">
             </div>
         </div>
     </article>
-
 </body>
 
 </html>

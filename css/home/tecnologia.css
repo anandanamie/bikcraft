@@ -1,11 +1,6 @@
 .tecnologia-bg {
   background-color: var(--cor-11);
-  box-shadow: inset 0px 80px var(--cor-0), inset 0px -80px var(--cor-0); /* Impressão de conteúdo vazando, pra cima e pra baixo */
-}
-
-.tecnologia-conteudo {
-  padding-top: 160px; /* Movimentar o conteudo conforme box-shadow */
-  padding-bottom: 160px;
+  box-shadow: inset 0 80px var(--cor-0), inset 0 -80px var(--cor-0); /* Impressão de conteúdo vazando, pra cima e pra baixo */
 }
 
 .tecnologia {
@@ -19,6 +14,11 @@
   height: 100%; /* Imagem sempre no mesmo tamanho que o conteúdo */
   object-fit: cover; /* Impede que tire a razão da foto */
   object-position: left; /* Começa a cortar na direita */
+}
+
+.tecnologia-conteudo {
+  padding-top: 160px; /* Movimentar o conteudo conforme box-shadow */
+  padding-bottom: 160px;
 }
 
 .tecnologia-conteudo > span {
