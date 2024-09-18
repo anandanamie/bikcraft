@@ -8,10 +8,8 @@
   gap: 20px;
   justify-content: space-between; /* Centralizados */
   align-items: center;
-  padding: 20px;
-  max-width: 1200px; /* Ou podemos colocar box-sizing: border-box e max-width: 1200; para não precisarmos colocar número quebrado aqui por conta do padding de 20px */
-  margin-left: auto; /* Sempre centralizar na responsividade */
-  margin-right: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .header-menu {
@@ -23,10 +21,7 @@
 .header-menu a {
   display: inline-block; /* Padding não vai ficar direitinho se os links ficarem um abaixo do outro, portanto deve ser inline block */
   padding: 16px 0px; /* Aumentar a área de contato */
-  font-size: 18px;
   position: relative;
-  font-family: "Poppins";
-  font-weight: 400;
 }
 
 .header-menu a:after {

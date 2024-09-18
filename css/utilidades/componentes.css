@@ -1,3 +1,12 @@
+.container {
+  box-sizing: border-box;
+  max-width: 1200px; /* Ou podemos colocar box-sizing: border-box e max-width: 1200; para não precisarmos colocar número quebrado aqui por conta do padding de 20px */
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto; /* Sempre centralizar na responsividade */
+  margin-right: auto;
+}
+
 .botao {
   display: inline-block; /* Para pegar o padding corretamente */
   padding: 16px 32px;
@@ -6,19 +15,35 @@
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1); /* x y blur tamanho da fonte e cor */
   text-transform: uppercase;
   color: var(--cor-p5);
-  font-size: 18px;
-  line-height: 1.33;
-  font-family: "Poppins";
-  font-weight: 600;
+  font: 600 1.125rem/1.35 "Poppins", sans-serif;
 }
 
-.botao a:hover {
+.botao:hover {
   background: linear-gradient(#ffb60d, #e59317);
 }
 
 @media (max-width: 600px) {
   .botao {
     padding: 12px 16px;
-    font-size: 16px;
+    font-size: 1rem;
   }
+}
+
+.link {
+  display: inline-block; /* Para pegar tudo qualquer padding que definirmos */
+  color: var(--cor-p1);
+  font: 500 1.5rem/1.5 "Poppins", sans-serif;
+  text-transform: uppercase;
+}
+
+.link::after /* Underline */ {
+  content: "";
+  display: block; /* Por padrão */
+  width: 100%; /* 100% da largura do conteúdo */
+  height: 4px;
+  background-color: currentColor; /* Cor do pai */
+}
+
+.link:hover {
+  color: var(--cor-0);
 }
