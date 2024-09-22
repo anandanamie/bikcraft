@@ -1,0 +1,45 @@
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form label {
+  display: block;
+  font: 600 1rem/1.5 "Poppins", sans-serif;
+  margin-bottom: 4px;
+}
+
+.form .col-2 {
+  grid-column: span 2; /* Expandir de ponta a ponta, colocar no html */
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form textarea /* Sempre definir qual é o tipo do input pois ele serve pra várias coisas no form */ {
+  font: 400 1rem/1.5 "Roboto", sans-serif;
+  background: var(--cor-1);
+  border: 1px solid var(--cor-2);
+  padding: 12px;
+  border-radius: 4px;
+  width: 100%; /* Input não se expande por padrão, temos que colocar 100%. O problema é que ele soma também o padding e vaza no responsivo, resolver com box-sizing */
+  box-sizing: border-box;
+}
+
+.form input[type="text"]:focus,
+.form input[type="email"]:focus,
+.form textarea:focus {
+  outline: none;
+  border-color: var(--cor-p1);
+  background: var(--cor-0);
+  box-shadow: 0 0 0 2px #fea;
+}
+
+@media (max-width: 600px) {
+  .form {
+    grid-template-columns: 1fr;
+  }
+  .form .col-2 {
+    grid-column: 1; /* Não se expandir mais pra ficar tudinho em 1fr */
+  }
+}
